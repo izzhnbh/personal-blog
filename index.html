@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #ccc;
+        }
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+        header .logo img {
+            max-width: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        header .nav-links {
+            flex-grow: 1;
+            text-align: center;
+        }
+        header .nav-links ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        header .nav-links ul li {
+            display: inline;
+        }
+        header .nav-links ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        header .search-container {
+            margin-left: auto;
+        }
+        header .search-container input[type="text"] {
+            padding: 6px;
+            font-size: 17px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .content .text {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .content .text h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .content .text p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .content .image-placeholder {
+            width: 400px;
+            height: 300px;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .content .image-placeholder img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            header .logo, header .search-container {
+                margin-bottom: 10px;
+            }
+            header .nav-links ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .content {
+                flex-direction: column;
+                padding: 20px;
+                margin: 10px;
+            }
+            .content .text {
+                padding-right: 0;
+                text-align: center;
+            }
+            .content .image-placeholder {
+                margin-top: 20px;
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://www.iium.edu.my/v2/wp-content/uploads/2022/06/IIUM-LOGO-AWARD-AUG-2023-1920x282.png" alt="IIUM">
+            <span>Personal Blog</span>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="favourite.html">Favourites</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="schedule.html">Timetable</a></li>
+            </ul>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search in site">
+        </div>
+    </header>
+    <div class="content">
+        <div class="text">
+            <h1>Welcome to my Blog</h1>
+            <P>My name is Nur Izzah Nabihah Bt Mohd Salleh</P> 
+            <p>My matric number is 2216522</p> 
+            <p>I am from Kota Bharu,Kelantan</p> 
+        </div>
+        <div class="image-placeholder">
+            <img src="myself.jpg" alt="Myself">
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 My HTML Learning Journey</p>
+    </footer>
+</body>
+</html>

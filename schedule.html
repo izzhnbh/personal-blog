@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            main {
+                padding: 10px;
+            }
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CLASS SCHEDULE SEM 2 2024</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="favourite.html">Favorites</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>TIME TABLE</h2>
+        <table>
+            <tr>
+                <th>DAY</th>
+                <th>TIME</th>
+                <th>SUBJECT</th>
+            </tr>
+            <tr>
+                <td>MONDAY</td>
+                <td>10:00 AM - 11:20 AM</td>
+                <td>Multimedia Technology</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>11:30 AM - 12:50 PM</td>
+                <td>Database Programming</td>
+            </tr>
+            <tr>
+                <td>TUESDAY</td>
+                <td>10:00 AM - 11:20 AM</td>
+                <td>Web Technology</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>11:30 AM - 12:50 PM</td>
+                <td>Computer Networking</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>8:00 PM - 10:00 PM</td>
+                <td>Usrah In Action 1</td>
+            </tr>
+            <tr>
+                <td>WEDNESDAY</td>
+                <td>9:00 AM - 9:50 AM</td>
+                <td>Tilawah Al-Quran</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>10:00 AM - 11:20 AM</td>
+                <td>Multimedia Technology</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>11:30 AM - 12:50 PM</td>
+                <td>Database Programming</td>
+            </tr> 
+            <tr>
+                <td></td>
+                <td>8:00 PM - 10:00 PM</td>
+                <td>Leadership</td>
+            </tr>
+            <tr>
+                <td>THURSDAY</td>
+                <td>10:00 AM - 11:20 AM</td>
+                <td>Web Technology</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>11:30 AM - 12:50 PM</td>
+                <td>Computer Networking</td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My HTML Learning Journey</p>
+    </footer>
+</body>
+</html>
